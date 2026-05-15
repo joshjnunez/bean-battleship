@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import davidBean from './assets/david/david-bean.svg'
+import davidBean from './assets/david/david-bean.jpg'
 
 // Bean ship definitions
 const BEAN_TYPES = [
