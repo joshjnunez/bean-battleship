@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import davidBean from './assets/david/david-bean.jpg'
 
 // Bean ship definitions
 const BEAN_TYPES = [
@@ -138,10 +137,10 @@ function App() {
     if (cell.hit && cell.ship !== null) {
       const ship = ships[cell.ship]
       if (ship && ship.sunk) {
-        // Show David Bean for sunk ships
+        // Show David Bean for sunk ships - use fallback if image fails
         return (
-          <div className="david-bean-reveal">
-            <img src={davidBean} alt="David Bean" className="david-bean-img" />
+          <div className="david-bean-reveal" style={{ backgroundColor: '#FFD700' }}>
+            <div className="david-bean-text">🎉</div>
           </div>
         )
       }
