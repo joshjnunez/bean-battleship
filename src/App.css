@@ -138,8 +138,11 @@ body {
   100% { opacity: 1; transform: scale(1) rotate(0deg); }
 }
 
-.david-bean-text {
-  font-size: 28px;
+.david-bean-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .sidebar {
