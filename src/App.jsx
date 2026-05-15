@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import davidBean from './assets/david/david-bean.jpg'
+import davidBean from './assets/david/david-bean.svg'
 
 // Bean ship definitions
 const BEAN_TYPES = [
@@ -141,7 +141,7 @@ function App() {
         // Show David Bean for sunk ships
         return (
           <div className="david-bean-reveal">
-            <img src={davidBean} alt="David Bean" className="david-bean-img" onError={(e) => e.target.style.display = 'none'} />
+            <img src={davidBean} alt="David Bean" className="david-bean-img" />
           </div>
         )
       }
